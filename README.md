@@ -37,7 +37,7 @@ People who use these datatypes should know what they are.
 
 # XYZ and WiFi scan traces
 
-These are all the `*.bz64jsonl` files starting with `xyzsw*` prefix.  XYZSW stands for accelerometer *xyz* coordinates, *speed* calculated from XYZ, 
+These are all the `*bz64jsonl` files starting with `xyzsw` prefix.  XYZSW stands for accelerometer *xyz* coordinates, *speed* calculated from XYZ, 
 and results obtained from *WiFi* scans. All traces are captured on Android devices.  These are, in fact, in the processed form as raw traces are in textual form and 
 are dumpted to separate files (XYZ and WiFi scan frequencies are different). 
 
