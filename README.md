@@ -37,5 +37,18 @@ People who use these datatypes should know what they are.
 
 # XYZ and WiFi scan traces
 
+These are all the `*.bz64jsonl` files starting with `xyzsw*` prefix.  XYZSW stands for accelerometer *xyz* coordinates, *speed* calculated from XYZ, 
+and results obtained from *WiFi* scans. All traces are captured on Android devices.  These are, in fact, in the processed form as raw traces are in textual form and 
+are dumpted to separate files (XYZ and WiFi scan frequencies are different). 
+
+The `*.bz64jsonl* files are in the simple format where each line is the `base64( bz2( astext( json)))` form. Note that, compared to the earlier format, the `bz2` compression 
+is added.  Practice shows that it helps by compressing content by about 30-40 percent.  The `.bz64jsonl` files themselves also compress fairly well.  
+Why such a messy format?  It is nice to have a given dataset in a single file.  Fast and easy to read and process further. 
+
+Note that there are `*.example.json` files added to some of the `*.bz64jsonl` files.  Those show examples of the data stored in the `*.bz64jsonl` files by picking a single line 
+and putting it in a separate `json` file.  Currently, the easiest way to view `json` files is to drop them into Firefox -- they come in colors, with folding, and everything. 
+
+
+That is all for now. 
 
 
